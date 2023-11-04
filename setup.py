@@ -4,7 +4,26 @@ import os
 package_name = "lodestonegpt"
 
 
-all_requires = open("requirements.txt", "r").readlines()
+all_requires = [
+    "openai",
+    "bs4",
+    "selenium",
+    "numpy",
+    "tiktoken>=0.3.3",
+    "requests",
+    "colorama",
+    "duckduckgo_search>=2.9.4",
+    "google-api-python-client",
+    "webdriver_manager",
+    "simpleeval",
+    "transformers[hf]",
+    "sentence_transformers[hf]",
+    "accelerate[hf]",
+    "bitsandbytes[hf]",
+    "torch[hf]",
+    "python-dotenv",
+
+]
 
 install_requires = []
 extras_require = {}
