@@ -1,10 +1,10 @@
-from loopgpt.tools import BaseTool
+from lodestonegpt.tools import BaseTool
 
 import requests
-import loopgpt
+import lodestonegpt
 
 
-agent = loopgpt.Agent()
+agent = lodestonegpt.Agent()
 
 
 class GetWeather(BaseTool):
@@ -59,7 +59,7 @@ agent.goals = [
 # register tool
 custom_tool = GetWeather()
 agent.tools[custom_tool.id] = custom_tool
-loopgpt.tools.register_tool_type(GetWeather)
+lodestonegpt.tools.register_tool_type(GetWeather)
 
 agent.temperature = 0
 

@@ -1,35 +1,35 @@
 Tools
 =====
 
-.. automodule:: loopgpt.tools.base_tool
+.. automodule:: lodestonegpt.tools.base_tool
     :members:
 
-.. automodule:: loopgpt.tools.google_search
+.. automodule:: lodestonegpt.tools.google_search
     :members:
 
-.. automodule:: loopgpt.tools.browser
+.. automodule:: lodestonegpt.tools.browser
     :members:
 
-.. automodule:: loopgpt.tools.simple_browser
+.. automodule:: lodestonegpt.tools.simple_browser
     :members:
 
-.. automodule:: loopgpt.tools.filesystem
+.. automodule:: lodestonegpt.tools.filesystem
     :members:
 
-.. automodule:: loopgpt.tools.shell
+.. automodule:: lodestonegpt.tools.shell
     :members:
 
-.. automodule:: loopgpt.tools.code
+.. automodule:: lodestonegpt.tools.code
     :members:
 
-.. automodule:: loopgpt.tools.math
+.. automodule:: lodestonegpt.tools.math
     :members:
 
-.. automodule:: loopgpt.agent_manager
+.. automodule:: lodestonegpt.agent_manager
     :members:
 
-.. automodule:: loopgpt.tools.memory_manager
+.. automodule:: lodestonegpt.tools.memory_manager
     :members:
 
-.. automodule:: loopgpt.tools.user_manager
+.. automodule:: lodestonegpt.tools.user_manager
     :members:

@@ -1,4 +1,4 @@
-The LoopGPT API Reference
+The lodestonegpt API Reference
 =========================
 
 .. toctree::

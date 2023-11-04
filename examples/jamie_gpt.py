@@ -1,7 +1,7 @@
-import loopgpt
-from loopgpt.tools import GoogleSearch, Browser, WriteToFile, AppendToFile
+import lodestonegpt
+from lodestonegpt.tools import GoogleSearch, Browser, WriteToFile, AppendToFile
 
-agent = loopgpt.Agent(
+agent = lodestonegpt.Agent(
     tools=[GoogleSearch, Browser, WriteToFile, AppendToFile], temperature=0.2
 )
 

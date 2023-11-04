@@ -1,4 +1,4 @@
-from loopgpt.embeddings import BaseEmbeddingProvider
+from lodestonegpt.embeddings import BaseEmbeddingProvider
 
 import numpy as np
 

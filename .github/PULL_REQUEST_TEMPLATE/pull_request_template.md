@@ -27,8 +27,8 @@ Changes visible to users:
 - [ ] **New feature** (prefix: `feat` - non-breaking change which adds functionality)
 - [ ] **Breaking change** (prefix: `feat!!` or `fix!!` - fix or feature that would cause existing functionality to not work as expected)
 - [ ] **Documentation** (prefix: `docs` - improvements to any documentation content **for users**)
-- [ ] **Homepage** (prefix: `page` - improvements to the [Homepage](https://github.com/farizrahman4u/loopgpt/blob/main/README.md)  
-- [ ] **Contributing Guidelines** (prefix: `contrib` - any improvements to documentation content **for contributors** - see [Contributing](https://github.com/farizrahman4u/LoopGPT/tree/main/.github/CONTRIBUTING.md)
+- [ ] **Homepage** (prefix: `page` - improvements to the [Homepage](https://github.com/farizrahman4u/lodestonegpt/blob/main/README.md)  
+- [ ] **Contributing Guidelines** (prefix: `contrib` - any improvements to documentation content **for contributors** - see [Contributing](https://github.com/farizrahman4u/lodestonegpt/tree/main/.github/CONTRIBUTING.md)
 
 Internal changes:
 
@@ -50,8 +50,8 @@ Internal changes:
 
 <!--
 By submitting this pull request, you must agree to follow our
-[contributing guide](https://github.com/farizrahman4u/LoopGPT/tree/main/.github/CONTRIBUTING.md)
+[contributing guide](https://github.com/farizrahman4u/lodestonegpt/tree/main/.github/CONTRIBUTING.md)
 Put an x in the boxes to confirm you agree.
 -->
 
-- [ ] My contribution follows this project's [contributing guide](https://github.com/farizrahman4u/LoopGPT/tree/main/.github/CONTRIBUTING.md)
+- [ ] My contribution follows this project's [contributing guide](https://github.com/farizrahman4u/lodestonegpt/tree/main/.github/CONTRIBUTING.md)

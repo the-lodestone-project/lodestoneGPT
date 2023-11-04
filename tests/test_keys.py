@@ -7,7 +7,7 @@ def test_add_key_prompt(monkeypatch):
     responses = iter(["y", "my-api-key"])
     monkeypatch.setattr(builtins, "input", lambda _: next(responses))
 
-    from loopgpt.utils.openai_key import check_openai_key
+    from lodestonegpt.utils.openai_key import check_openai_key
 
     # Run the function
     check_openai_key()

@@ -1,5 +1,5 @@
 # Use an official Python base image from the Docker Hub
-FROM python:3-alpine AS loopgpt-base
+FROM python:3-alpine AS lodestonegpt-base
 
 # Install browsers
 RUN apk update && apk add --no-cache \

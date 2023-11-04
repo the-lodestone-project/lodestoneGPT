@@ -35,7 +35,7 @@ L♾️pGPT is a re-implementation of the popular [Auto-GPT](https://github.com/
 📗 **This installs the latest stable version of L♾️pGPT. This is recommended for most users:**
 
 ```bash
-pip install loopgpt
+pip install lodestonegpt
 ```
 
 📕 The below two methods install the latest development version of L♾️pGPT. Note that this version maybe unstable:
@@ -43,22 +43,22 @@ pip install loopgpt
 ### Install from source
 
 ```bash
-pip install git+https://www.github.com/farizrahman4u/loopgpt.git@main
+pip install git+https://www.github.com/farizrahman4u/lodestonegpt.git@main
 ```
 
 ### Install from source (dev)
 
 ```bash
-git clone https://www.github.com/farizrahman4u/loopgpt.git
-cd  loopgpt
+git clone https://www.github.com/farizrahman4u/lodestonegpt.git
+cd  lodestonegpt
 pip install -e .
 ```
 
 ### Install from source (dev) using Docker
 ```bash
-git clone https://www.github.com/farizrahman4u/loopgpt.git
-cd  loopgpt
-docker build -t loopgpt:local-dev .
+git clone https://www.github.com/farizrahman4u/lodestonegpt.git
+cd  lodestonegpt
+docker build -t lodestonegpt:local-dev .
 ```
 
 ## 🏎️ Getting Started
@@ -91,7 +91,7 @@ How to set environment variables:
 Let's create an agent in a new [Python](https://python.org) script.
 
 ```python
-from loopgpt.agent import Agent
+from lodestonegpt.agent import Agent
 
 agent = Agent()
 ```
@@ -128,7 +128,7 @@ Save your Python file as `research_gpt.py` and run it:
 python research_gpt.py
 ```
 
-<img src="/docs/assets/imgs/loopgpt_demo_pic.png?raw=true" height="350">
+<img src="/docs/assets/imgs/lodestonegpt_demo_pic.png?raw=true" height="350">
 
 You can exit the CLI by typing "exit".
 
@@ -145,10 +145,10 @@ agent.cli(continuous=True)
 You can run L♾️pGPT directly from the command line without having to write any python code as well:
 
 ```bash
-loopgpt run
+lodestonegpt run
 ```
 
-Run `loopgpt --help` to see all the available options.
+Run `lodestonegpt --help` to see all the available options.
 
 ### 🐋 Docker Mode
 
@@ -156,10 +156,10 @@ You can run L♾️pGPT in the previously mentioned modes, using Docker:
 
 ```bash
 # CLI mode
-docker run -i --rm loopgpt:local-dev loopgpt run
+docker run -i --rm lodestonegpt:local-dev lodestonegpt run
 
 # Script mode example
-docker run -i --rm -v "$(pwd)/scripts:/scripts" loopgpt:local-dev python /scripts/myscript.py
+docker run -i --rm -v "$(pwd)/scripts:/scripts" lodestonegpt:local-dev python /scripts/myscript.py
 
 ```
 
@@ -176,7 +176,7 @@ Let's create WeatherGPT, an AI assistant for all things weather.
 A tool inherits from `BaseTool` and you only need to write a docstring to get your tool up and running!
 
 ```python
-from loopgpt.tools import BaseTool
+from lodestonegpt.tools import BaseTool
 
 class GetWeather(BaseTool):
     """Quickly get the weather for a given city
@@ -240,15 +240,15 @@ class GetWeather(BaseTool):
 That's it! You've built your first custom tool. Let's register it with a new agent and run it:
 
 ```python
-from loopgpt.tools import WriteToFile
-import loopgpt
+from lodestonegpt.tools import WriteToFile
+import lodestonegpt
 
 # Register custom tool type
 # This is actually not required here, but is required when you load a saved agent with custom tools.
-loopgpt.tools.register_tool_type(GetWeather)
+lodestonegpt.tools.register_tool_type(GetWeather)
 
 # Create Agent
-agent = loopgpt.Agent(tools=[GetWeather, WriteToFile])
+agent = lodestonegpt.Agent(tools=[GetWeather, WriteToFile])
 agent.name = "WeatherGPT"
 agent.description = "an AI assistant that tells you the weather"
 agent.goals = [
@@ -300,15 +300,15 @@ agent.save("ResearchGPT.json", include_state=False)
 Then pick up where you left off with:
 
 ```python
-import loopgpt
-agent = loopgpt.Agent.load("ResearchGPT.json")
+import lodestonegpt
+agent = lodestonegpt.Agent.load("ResearchGPT.json")
 agent.cli()
 ```
 
 or by running the saved agent from the command line:
 
 ```bash
-loopgpt run ResearchGPT.json
+lodestonegpt run ResearchGPT.json
 ```
 
 You can convert the agent state to a json compatible python dictionary instead of writing to a file:
@@ -327,9 +327,9 @@ agent_config = agent.config(include_state=False)
 To reload the agent from the config, use:
 
 ```python
-import loopgpt
+import lodestonegpt
 
-agent = loopgpt.Agent.from_config(agent_config)
+agent = lodestonegpt.Agent.from_config(agent_config)
 ```
 
 ## 📋 Requirements
@@ -365,4 +365,4 @@ Need help? Join our [Discord](https://discord.gg/rqs26cqx7v).
 
 
 ## ⭐ Star History 📈
-<img src="https://api.star-history.com/svg?repos=farizrahman4u/loopgpt&type=Date" alt= "Star History Chart" height="350">
+<img src="https://api.star-history.com/svg?repos=farizrahman4u/lodestonegpt&type=Date" alt= "Star History Chart" height="350">

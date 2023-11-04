@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "LoopGPT"
+project = "lodestonegpt"
 copyright = "2023, Fariz Rahman, Fayaz Rahman"
 author = "Fariz Rahman, Fayaz Rahman"
 release = "0.1.0"

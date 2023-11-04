@@ -1,4 +1,4 @@
-from loopgpt.models import BaseModel
+from lodestonegpt.models import BaseModel
 
 
 class DummyModel(BaseModel):

@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-package_name = "loopgpt"
+package_name = "lodestonegpt"
 
 
 all_requires = open("requirements.txt", "r").readlines()
@@ -31,6 +31,6 @@ if __name__ == "__main__":
         packages=find_packages(),
         name=package_name,
         version="0.1.0",
-        description="Modular Auto-GPT Framework",
-        entry_points={"console_scripts": ["loopgpt = loopgpt.loops.cli:main"]},
+        description="Modular Auto-GPT Framework Build For Project Lodestone",
+        entry_points={"console_scripts": ["lodestonegpt = lodestonegpt.loops.cli:main"]},
     )

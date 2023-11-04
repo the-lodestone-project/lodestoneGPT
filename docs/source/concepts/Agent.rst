@@ -22,10 +22,10 @@ An agent can be initialized using
 
 .. code-block:: python
 
-    import loopgpt
-    agent = loopgpt.Agent()
+    import lodestonegpt
+    agent = lodestonegpt.Agent()
 
-See :class:`loopgpt.Agent <loopgpt.agent.Agent>` to see how to configure the agent.
+See :class:`lodestonegpt.Agent <lodestonegpt.agent.Agent>` to see how to configure the agent.
 
 Goals and Constraints
 =====================
@@ -40,7 +40,7 @@ You can set goals and constraints for the Agent by simply updating the correspon
 Chat with Agent
 ===============
 
-:meth:`agent.chat` deals with sending prompts to the agent and executing commands. It returns the Agent's response (see [loopgpt/constants.py](https://github.com/farizrahman4u/loopgpt/blob/main/loopgpt/constants.py) for the response format).
+:meth:`agent.chat` deals with sending prompts to the agent and executing commands. It returns the Agent's response (see [lodestonegpt/constants.py](https://github.com/farizrahman4u/lodestonegpt/blob/main/lodestonegpt/constants.py) for the response format).
 
 It takes two arguments:
 

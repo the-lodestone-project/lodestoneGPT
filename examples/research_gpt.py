@@ -1,6 +1,6 @@
-import loopgpt
+import lodestonegpt
 
-agent = loopgpt.Agent()
+agent = lodestonegpt.Agent()
 
 agent.name = "ResearchGPT"
 

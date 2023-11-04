@@ -1,17 +1,17 @@
 Model
 =====
 
-.. automodule:: loopgpt.models.base
+.. automodule:: lodestonegpt.models.base
     :members:
 
-.. automodule:: loopgpt.models.openai_
+.. automodule:: lodestonegpt.models.openai_
     :members:
 
-.. automodule:: loopgpt.models.azure_openai
+.. automodule:: lodestonegpt.models.azure_openai
     :members:
 
-.. automodule:: loopgpt.models.llama_cpp
+.. automodule:: lodestonegpt.models.llama_cpp
     :members:
 
-.. automodule:: loopgpt.models.stable_lm
+.. automodule:: lodestonegpt.models.stable_lm
     :members:

@@ -1,17 +1,17 @@
 Embedding Providers
 ===================
 
-.. automodule:: loopgpt.embeddings
+.. automodule:: lodestonegpt.embeddings
     :members:
 
-.. automodule:: loopgpt.embeddings.base
+.. automodule:: lodestonegpt.embeddings.base
     :members:
 
-.. automodule:: loopgpt.embeddings.openai_
+.. automodule:: lodestonegpt.embeddings.openai_
     :members:
 
-.. automodule:: loopgpt.embeddings.azure_openai
+.. automodule:: lodestonegpt.embeddings.azure_openai
     :members:
 
-.. automodule:: loopgpt.embeddings.hf
+.. automodule:: lodestonegpt.embeddings.hf
     :members:

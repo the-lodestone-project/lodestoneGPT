@@ -1,14 +1,14 @@
-import loopgpt
+import lodestonegpt
 
-from loopgpt.tools import Browser
+from lodestonegpt.tools import Browser
 from dummy_model import DummyModel
 from dummy_embedding_provider import DummyEmbeddingProvider
 
 
 def test_serde_basic():
-    agent = loopgpt.Agent()
+    agent = lodestonegpt.Agent()
     cfg = agent.config()
-    agent2 = loopgpt.Agent.from_config(cfg)
+    agent2 = lodestonegpt.Agent.from_config(cfg)
 
 
 def test_serde_browser():
@@ -19,12 +19,12 @@ def test_serde_browser():
 
 
 def test_serde_agent_basic():
-    loopgpt.models.user_providers["DummyModel"] = DummyModel
-    loopgpt.embeddings.user_providers["DummyEmbeddingProvider"] = DummyEmbeddingProvider
+    lodestonegpt.models.user_providers["DummyModel"] = DummyModel
+    lodestonegpt.embeddings.user_providers["DummyEmbeddingProvider"] = DummyEmbeddingProvider
 
     model = DummyModel()
     emb = DummyEmbeddingProvider()
-    agent = loopgpt.Agent(model=model, embedding_provider=emb)
+    agent = lodestonegpt.Agent(model=model, embedding_provider=emb)
     agent.name = "GoodAgent"
     agent.description = "This is a good agent."
     agent.goals = ["To be a good agent.", "To be a nice agent."]
@@ -33,7 +33,7 @@ def test_serde_agent_basic():
     agent.progress = ["I am being good.", "I am being nice."]
 
     cfg = agent.config()
-    agent2 = loopgpt.Agent.from_config(cfg)
+    agent2 = lodestonegpt.Agent.from_config(cfg)
 
     assert agent2.state == agent.state
     assert agent2.name == "GoodAgent"
@@ -43,10 +43,10 @@ def test_serde_agent_basic():
     assert agent2.plan == ["I will be good.", "I will be nice."]
     assert agent2.progress == ["I am being good.", "I am being nice."]
 
-    empty_agent = loopgpt.Agent(model=model, embedding_provider=emb)
+    empty_agent = lodestonegpt.Agent(model=model, embedding_provider=emb)
     agent.clear_state()
     cfg = agent.config()
-    agent2 = loopgpt.Agent.from_config(cfg)
+    agent2 = lodestonegpt.Agent.from_config(cfg)
 
     assert agent2.state == empty_agent.state
     assert agent2.plan == empty_agent.plan

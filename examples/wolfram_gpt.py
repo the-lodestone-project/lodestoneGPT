@@ -1,8 +1,8 @@
 import wolframalpha
-import loopgpt
+import lodestonegpt
 import os
 
-from loopgpt.tools import BaseTool
+from lodestonegpt.tools import BaseTool
 
 
 class AskWolfram(BaseTool):
@@ -27,7 +27,7 @@ class AskWolfram(BaseTool):
         return {"answer": next(res.results).text}
 
 
-agent = loopgpt.Agent()
+agent = lodestonegpt.Agent()
 
 ask_wolfram = AskWolfram()
 agent.tools[ask_wolfram.id] = ask_wolfram

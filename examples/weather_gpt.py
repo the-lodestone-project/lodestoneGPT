@@ -1,7 +1,7 @@
-from loopgpt.tools import BaseTool, WriteToFile
-from loopgpt.agent import Agent
+from lodestonegpt.tools import BaseTool, WriteToFile
+from lodestonegpt.agent import Agent
 
-import loopgpt.tools
+import lodestonegpt.tools
 import requests
 
 
@@ -40,7 +40,7 @@ class GetWeather(BaseTool):
             return f"An error occurred while getting the weather: {e}."
 
 
-loopgpt.tools.register_tool_type(GetWeather)
+lodestonegpt.tools.register_tool_type(GetWeather)
 
 agent = Agent(tools=[GetWeather, WriteToFile])
 agent.name = "WeatherGPT"
