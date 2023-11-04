@@ -1,1 +1,1 @@
-from lodestone import logger
+from lodestone.logger import logger

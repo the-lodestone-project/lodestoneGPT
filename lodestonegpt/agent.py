@@ -373,15 +373,15 @@ class Agent:
             s = s.split("Result: ", 1)[0]
         try:
             return json.loads(s)
-        except Exception:
+        except:
             s = s[s.find("{") : s.rfind("}") + 1]
             try:
                 return json.loads(s)
-            except Exception:
+            except:
                 try:
                     s = s.replace("\n", " ")
                     return ast.literal_eval(s)
-                except Exception:
+                except:
                     try:
                         return ast.literal_eval(s + "}")
                     except:
